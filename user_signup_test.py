@@ -16,6 +16,6 @@ def user_signup_test():
 
 	submit = signup_test.find_element_by_xpath(f"//form[@id='msform']/fieldset/input[6]")
 	submit.click()
-	# login_test.quit()
+	# signup_test.quit()
 
 user_signup_test()
