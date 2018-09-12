@@ -7,8 +7,8 @@ def login_test():
 	
 	login = login_test.find_element_by_name("username")
 	password = login_test.find_element_by_name("password")
-	login.send_keys("emerson")
-	password.send_keys("password")
+	login.send_keys("my_username")
+	password.send_keys("my_password")
 
 	login_test.find_element_by_name('login').click()
 	# login_test.quit()
