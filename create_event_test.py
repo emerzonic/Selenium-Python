@@ -29,10 +29,9 @@ def create_event_test():
 	description = create_event.find_element_by_xpath("//form[@id='msform']/fieldset[2]/textarea[@id='inputDescription']")
 	description.send_keys(event[0])
 
-	create_event.implicitly_wait(2)
 	
 	next_button2 = create_event.find_element_by_xpath("//form/fieldset[2]/input[2]")
-	create_event.implicitly_wait(5)
+	create_event.execute_script('arguments[0].click()', next_button2)
 	next_button2.click()
 	# create_event.quit()
 
