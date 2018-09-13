@@ -1,5 +1,6 @@
 def login_test():
 	from selenium import webdriver
+	import config
 
 	login_test = webdriver.Firefox()
 	login_test.get('https://secure-garden-12181.herokuapp.com')
@@ -7,8 +8,8 @@ def login_test():
 	
 	login = login_test.find_element_by_name("username")
 	password = login_test.find_element_by_name("password")
-	login.send_keys("my_username")
-	password.send_keys("my_password")
+	login.send_keys(config.VIA_Username)
+	password.send_keys(config.VIA_Password)
 
 	login_test.find_element_by_name('login').click()
 	# login_test.quit()

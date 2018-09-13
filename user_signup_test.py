@@ -14,7 +14,7 @@ def user_signup_test():
 		field.send_keys(user[index])
 		index += 1
 
-	submit = signup_test.find_element_by_xpath(f"//form[@id='msform']/fieldset/input[6]")
+	submit = signup_test.find_element_by_xpath("//form[@id='msform']/fieldset/input[6]")
 	submit.click()
 	# signup_test.quit()
 
